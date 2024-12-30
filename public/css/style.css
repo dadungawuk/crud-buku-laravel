@@ -1,0 +1,194 @@
+/* Reset CSS */
+body, h1, p, table, th, td, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  /* Container Styling */
+  .container {
+    width: 90%;
+    max-width: 1020px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Heading */
+  .container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #555;
+  }
+
+  /* Navigation Styling */
+.nav {
+    margin-bottom: 20px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    /* border-radius: 5px; */
+    padding: 0px 10px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between menu items */
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #34495e;
+    transition: background-color 0.3s;
+}
+
+.nav ul li a:hover {
+    background-color: #555; /* Darker blue for hover */
+    color: #fff;
+}
+
+/* Subheading Styling */
+h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #555;
+}
+
+  /* Form Styling */
+  form {
+    /* margin-bottom: 20px; */
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input, select{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+
+  .tombol {
+    background-color: #34495e;
+    color: #fff;
+    padding: 6px 6px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration:none;
+  }
+
+  .tombol:hover {
+    background-color: #555;
+  }
+
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  thead {
+    background-color: #34495e;
+    color: #fff;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  .footer{
+    margin-top:10px;
+    border-top: 1px solid #ebebeb;
+    padding: 10px;
+    text-align:center;
+    font-size:75%;
+    font-style: italic;
+  }
+
+  /* bagian pagination */
+
+  .custom-pagination ul{
+    display:flex;
+    list-style:none;
+    padding:0;
+  }
+
+  .custom-pagination li{
+    margin: 0 5px;
+  }
+
+  .custom-pagination a{
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .custom-pagination .active span{
+    background-color: #34495e;
+    color: #fff;
+    border: 1px solid #34495e;
+    border-radius: 4px;
+    padding: 5px 10px;
+    display: block;
+  }
+
+  .custom-pagination .disabled span{
+    color: #34495e;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    display: block;
+    pointer-events: none;
+  }
+  /* end pagination */
+
+
