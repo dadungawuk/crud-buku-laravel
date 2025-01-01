@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aplikasi Manajemen Data Buku</title>
+    <title>@yield('title', 'Aplikasi Manajemen Data Buku')</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons" />
     @vite('resources/css/app.css')
 </head>
@@ -43,6 +43,19 @@
                             <span class="ml-3">Buku</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="{{ route('anggota.index') }}" class="flex items-center p-2 rounded hover:bg-gray-700">
+                            <span class="material-icons">menu_book</span>
+                            <span class="ml-3">Anggota</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('peminjaman.index') }}"
+                            class="flex items-center p-2 rounded hover:bg-gray-700">
+                            <span class="material-icons">menu_book</span>
+                            <span class="ml-3">Peminjaman Buku</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
 
@@ -62,7 +75,7 @@
         <div class="flex-1 flex flex-col">
 
             <header class="bg-white shadow flex items-center justify-between p-4">
-                <h1 class="text-xl font-bold">Dashboard</h1>
+                <h1 class="text-xl font-bold">@yield('title', 'Aplikasi Manejemen Data Buku')</h1>
                 <div class="flex items-center space-x-4">
                     <div class="relative group">
                         <button class="flex items-center focus:outline-none">

@@ -21,4 +21,9 @@ class Buku extends Model
     {
         return $this->belongsTo(Penerbit::class);
     }
+
+    public function peminjaman()
+    {
+        return $this->belongsToMany(Peminjaman::class, 'peminjaman_bukus');
+    }
 }
