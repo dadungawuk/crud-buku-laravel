@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Kategori;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class KategoriController extends Controller
 {
@@ -38,6 +39,7 @@ class KategoriController extends Controller
         Kategori::create($validatedData);
 
         // redirect ke index kategori
+        Alert::success('Sukses', 'Data berhasil ditambahkan...');
         return redirect()->route('kategori.index');
     }
 
