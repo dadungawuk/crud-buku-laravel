@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', 'Aplikasi Manajemen Data Buku')</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     @vite('resources/css/app.css')
 </head>
 

@@ -3,6 +3,7 @@
 use App\Http\Controllers\AnggotaController;
 use App\Http\Controllers\AuthManualController;
 use App\Http\Controllers\BukuController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FBukuController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\PeminjamanController;
@@ -13,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [FBukuController::class, 'index'])->name('homepage');
 Route::get('/katalog/{buku}', [FBukuController::class, 'detail_buku'])->name('detail-buku');
 
-Route::middleware(['auth'])->get('/dashboard', function () {
-    return view('welcome');
-})->name('dashboard');
+// Route::middleware(['auth'])->get('/dashboard', function () {
+//     return view('welcome');
+// })->name('dashboard');
+
+Route::middleware(['auth'])->get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::middleware(['auth'])->prefix('admin')->group(function () {
     Route::resource('kategori', KategoriController::class);
